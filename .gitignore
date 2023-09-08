@@ -1,0 +1,9 @@
+# macos garbage
+.DS_Store
+
+# vscode
+.vscode
+
+# vim
+*.swp
+*.vim
