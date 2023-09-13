@@ -1,11 +1,15 @@
 package main
 
-import "errors"
-
-var (
-	ErrNotFound = errors.New("can't find the word you are looking for")
-	ErrWordExists = errors.New("can't add word because it already exists")
+const (
+	ErrNotFound = DictionaryErr("can't find the word you are looking for")
+	ErrWordExists = DictionaryErr("can't add word because it already exists")
 )
+
+type DictionaryErr string
+
+func (e DictionaryErr) Error() string {
+	return string(e)
+} // https://dave.cheney.net/2016/04/07/constant-errors
 
 type Dictionary map[string]string
 
