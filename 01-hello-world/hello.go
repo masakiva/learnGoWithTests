@@ -4,11 +4,11 @@ import "fmt"
 
 const (
 	spanish = "Spanish"
-	french = "French"
+	french  = "French"
 
 	englishHelloPrefix = "Hello, "
 	spanishHelloPrefix = "Hola, "
-	frenchHelloPrefix = "Bonjour, "
+	frenchHelloPrefix  = "Bonjour, "
 )
 
 func Hello(name string, language string) string {
@@ -28,9 +28,8 @@ func greetingPrefix(language string) (prefix string) {
 	default:
 		prefix = englishHelloPrefix
 	}
-	return
+	return // https://github.com/golang/go/wiki/CodeReviewComments#named-result-parameters
 }
-
 
 func main() {
 	fmt.Println(Hello("world", ""))

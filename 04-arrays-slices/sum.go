@@ -9,7 +9,7 @@ func Sum(numbers []int) int {
 	return sum
 }
 
-func SumAllTails(numbersToSum ... []int) []int {
+func SumAllTails(numbersToSum ...[]int) []int {
 	lengthOfNumbers := len(numbersToSum)
 	sums := make([]int, lengthOfNumbers)
 

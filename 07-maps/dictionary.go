@@ -1,7 +1,7 @@
 package main
 
 const (
-	ErrNotFound = DictionaryErr("can't find the word you are looking for")
+	ErrNotFound   = DictionaryErr("can't find the word you are looking for")
 	ErrWordExists = DictionaryErr("can't add word because it already exists")
 )
 

@@ -1,7 +1,9 @@
-package integers
+package integers // https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project
 
-import "testing"
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestAdder(t *testing.T) {
 	sum := Add(2, 2)
@@ -16,4 +18,4 @@ func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
 	// Output: 6
-}
+} // https://blog.golang.org/examples
