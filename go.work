@@ -1,0 +1,11 @@
+go 1.21.1
+
+use (
+	./01-hello-world
+	./02-integers
+	./03-iteration
+	./04-arrays-slices
+	./05-structs-methods-interfaces
+	./06-pointers-errors
+	./07-maps
+)
