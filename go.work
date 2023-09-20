@@ -12,5 +12,6 @@ use (
 	./09-mocking
 	./10-concurrency
 	./11-select
+	./14-context
 	./15-roman-numerals
 )
